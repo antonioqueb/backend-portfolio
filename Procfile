@@ -1,1 +1,1 @@
-web:  python manage.py collectstatic --no-input & gunicorn backend.wsgi --log-file -
+web: python manage.py makemigrations developer_profile & python manage.py migrate developer_profile & python manage.py collectstatic --no-input & gunicorn backend.wsgi --log-file -
