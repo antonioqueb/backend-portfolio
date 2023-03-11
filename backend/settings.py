@@ -63,7 +63,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    '*'
+    "http://localhost:3000",
+    "http://Localhost",
+    "Https://www.queb.com",
 ]
 
 
