@@ -24,3 +24,4 @@ sqlparse==0.4.3
 tzdata==2022.7
 virtualenv==20.20.0
 virtualenv-clone==0.5.7
+whitenoise==6.4.0
