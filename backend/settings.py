@@ -144,12 +144,13 @@ USE_TZ = True
 
 # settings.py
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [BASE_DIR / "static"]
+# ... otras configuraciones ...
 
-MEDIA_URL = '/files/'
-MEDIA_ROOT = os.path.join(BASE_DIR, "files")
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'public/static/')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'public/media/')
 
 
 
