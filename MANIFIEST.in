@@ -1,2 +1,2 @@
-include static/*
-include files
+include public
+

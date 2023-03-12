@@ -145,6 +145,7 @@ USE_TZ = True
 # settings.py
 
 # ... otras configuraciones ...
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'public/static/')
@@ -160,4 +161,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'public/media/')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # settings.py
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
