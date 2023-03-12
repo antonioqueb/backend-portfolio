@@ -25,7 +25,7 @@ class DeveloperProfileViewSet(ModelViewSet):
         instance = self.get_object()
         serializer = self.get_serializer(instance)
         response = super().retrieve(request, *args, **kwargs)
-        if response.status_code == 200 and 'image' in instance.profile_picture.name:
+        if response.status_code == 200 and 'media' in instance.profile_picture.name:
             path = instance.profile_picture.path[len(settings.MEDIA_ROOT):]
             response = self.media_serve(request, path)
         return response
