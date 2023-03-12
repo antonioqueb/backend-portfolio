@@ -1,1 +1,1 @@
-web: python manage.py makemigrations developer_profile & python manage.py migrate developer_profile & python manage.py collectstatic --no-input & gunicorn backend.wsgi --log-file -
+web: python manage.py makemigrations developer_profile && python manage.py migrate developer_profile && python manage.py collectstatic --no-input && gunicorn backend.wsgi --bind 0.0.0.0:$PORT --chdir /app --log-file - --workers 4 --timeout 120 --static /static/ --access-logfile - --error-logfile - --preload --max-requests 500 --max-requests-jitter 50
